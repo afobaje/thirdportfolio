@@ -1,0 +1,50 @@
+.proj{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    line-height: 3rem;
+}
+.jaz{
+    font-size: large;
+}
+.praw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+.mincard{
+    
+    display: flex;
+    height: 600px;
+    width:350px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:5px 5px 10px gray;
+    
+    border-radius: 15px;
+    flex-direction: column;
+}
+.mincard:hover{
+    transform: scale(1.1);
+    transition: transform 900ms ease-in-out;
+}
+.reimg{
+    height:300px;
+    width: 320px;
+}
+.reimg img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+
+}
+.retext{
+    text-align:start;
+    padding:1rem;
+    line-height:1.5rem;
+}

@@ -1,0 +1,11 @@
+#contact{
+    display: flex;
+}
+#contact ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 3rem;
+    vertical-align: middle;
+    
+}

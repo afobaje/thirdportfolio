@@ -1,0 +1,112 @@
+.wrapper {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../assets/pexels-olia-danilevich-4974914.jpg");
+    
+  }
+.firstcard {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  padding-top: 3rem;
+  background-color: #333;
+  opacity: 0.9;
+}
+.sv{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+.sv h1,.sv p{
+    padding: 0 8rem;
+    white-space: pre-wrap;
+    text-align: justify;
+}
+.sv p{
+    line-height: 2rem;
+}
+
+.cards{
+    padding: .5rem;
+    display: flex;
+    gap:20px;
+    
+}
+
+.card{
+    background-color: black;
+    height: auto;
+    text-align:start;
+    line-height: 2rem;
+    padding: 3rem;
+    margin-right: 2rem;
+    border-radius: 25px;
+}
+.card:hover{
+    background-color: teal;
+    transition: background-color 800ms cubic-bezier(0.17, 0.24, 1, 0.59);
+}
+.poc{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+    
+}
+.poc .order{
+    padding-right: 10rem;
+    line-height: 2.5rem;
+    width: 50%;
+    padding-top: 3rem;
+}
+.im{
+    padding: 0 4rem;
+    width: 600px;
+   
+    
+}
+.im img{
+    
+    border-radius: 25px;
+    filter: brightness(1) drop-shadow(5px 5px 15px #222);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sv h1{
+    text-align: right;
+}
+
+@media (max-width:1080px){
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .poc{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sv{
+        display: flex;
+        flex-direction: column;
+    }
+    .order{
+        padding-right: 0px;
+        width: 100%;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+}

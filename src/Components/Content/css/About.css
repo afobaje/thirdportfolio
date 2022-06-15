@@ -1,0 +1,22 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 8rem;
+    flex-direction: column;
+    line-height: 2rem;
+    background-color: #eff8ed;
+    font-size: 20px;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    padding: 1rem;
+}
+.faq ul{
+    list-style: none;
+    text-align: start;
+}

@@ -1,0 +1,116 @@
+header{
+    background-image: url('../assets/pexels-edmond-dantès-8068119.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    /* background-color: aqua; */
+    background-size: 100%;
+    display: flex;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.case
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+.killer
+{
+    font-weight: bold;
+    font-size: 40px;
+    color: #333;
+    padding-bottom:2rem ;
+}
+.cavemen
+{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 3rem;
+    padding-right: 25rem;
+}
+.but button
+{
+    /* background-color: transparent; */
+    /* border: none; */
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-size: 14px;
+}
+.first{
+    margin-right: 1rem;
+    border: 1px solid skyblue;
+    background-color: white;
+}
+.second{
+    border: 1px solid skyblue;
+    background-color: skyblue;
+}
+.second:hover{
+    background-color: white;
+    color:skyblue;
+    border:none;
+    transition: background-color 1.5s cubic-bezier(0.17, 0.24, 1, 0.59);
+}
+.first:hover{
+    background-color: aqua;
+    color:white;
+    border:none;
+    transition: background-color 1.5s cubic-bezier(0.17, 0.24, 1, 0.59);
+}
+.marquee{
+    width:30vw;
+    height:100px;
+    position: relative;
+    color:#333;
+    overflow:hidden;
+    box-sizing: border-box;
+
+}
+.hscroll{
+    width: 200%;
+    display: flex;
+    position: absolute;
+    animation: marq 20s ease-in-out infinite;
+}
+.hscroll:hover{
+    animation-play-state: paused;
+}
+.roll{
+    float: left;
+    color: white;
+    width:30%;
+}
+.roll:hover{
+    transform: scale(1.2);
+}
+
+.marquee h2{
+    margin-bottom: .5rem;
+}
+
+@keyframes marq {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+
+@media(max-width:1080px){
+    header{
+        width: fit-content;
+        width:100%;
+        height: auto;
+        padding-bottom: 1rem;
+        background-size: cover;
+    }
+}

@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300&display=swap');
+::-webkit-scrollbar-thumb{
+  scrollbar-width: 3px;
+  background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar{
+  width:3px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App{
+  overflow: hidden;
+}
+*{
+  /* min-height: auto; */
+  scroll-behavior: smooth;
+  
+  padding:0;
+  font-family: 'Overpass', sans-serif;
+  margin: 0;
+}
+:root{
+  --red:red;
+}
+.inter{
+  animation: alt 2s ease-in-out;
+  animation-delay: 900ms;
+}
+@keyframes alt {
+  from{
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  to{
+    opacity:1;
+    transform:translateY(-100%);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
